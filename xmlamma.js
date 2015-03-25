@@ -1,6 +1,6 @@
 //XMLamma.js Version 0.1.0
 
-function XMLamma() {
+function XMLamma(text) {
     var xmlhttp;
 
     if (window.XMLHttpRequest) {
@@ -25,6 +25,6 @@ function XMLamma() {
         }
     }
 
-    xmlhttp.open("GET", "ajax_info.txt", true);
+    xmlhttp.open("GET", text, true);
     xmlhttp.send();
 }
